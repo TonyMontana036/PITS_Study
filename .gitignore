@@ -1,10 +1,10 @@
 # Игнор-лист файлов проекта
 
 # Игнор .idea
-/.idea/*
+.idea/
 
 # Игнор target
-/target/*
+target/
 
 # Игнор README1.md
-/README1.md
+README1.md
