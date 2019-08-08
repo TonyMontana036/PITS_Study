@@ -3,19 +3,20 @@ class Operators {
     boolean a = true;
     boolean b = true;
 
-    boolean c = a && b;
-    boolean d = a || b;
-    boolean e = a || b;
-    boolean f = a || b;
-//    boolean g = a !== b;
-//    boolean h = a >= b;
+    boolean c = a && (b == true);
+    boolean d = (a == true) || b;
+    boolean e = a != true && b;
+    boolean f = a || (b == true);
+    boolean g = a != b;
+    int x, y;
+    boolean h = x >=  y;
   }
 
 
 class Numbers {
   public static void main(String[] args) {
     int a = 2;
-    int b = 421;
+    int b = 2;
 
     a = a*3;
     b--;
@@ -30,7 +31,7 @@ class Numbers {
     a = a % 2 == 0 ? a*3 : a+6;
     System.out.println(a);
 
-    b = (a % 2 == 0) & (b % 2 == 0) ? b : b+6;
+    String answer = (a % 2 == 0) & (b % 2 == 0) ? "Ура, оба числа четные" : String.valueOf((b + 4));
     System.out.println(answer);
 
     boolean x3 = ((a % 2) == 0) & ((b % 2) == 0) ? true : false;
