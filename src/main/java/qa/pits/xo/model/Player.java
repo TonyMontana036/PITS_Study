@@ -1,3 +1,5 @@
+package qa.pits.xo.model;
+
 public class Player {
 
   String name;

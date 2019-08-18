@@ -1,3 +1,5 @@
+package qa.pits.xo.model;
+
 public class Game {
 
     Player palyer1 = new Player();
