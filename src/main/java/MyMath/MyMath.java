@@ -2,11 +2,18 @@ package MyMath;
 
 public class MyMath {
 
-    public String setLength(int a, String b){
+    public static void main(String[] args) {
+        String test = "Слово";
+        System.out.println(test = test + -1);
+        System.out.println(test.length());
+        System.out.println(test.substring(0,5));
+    }
+
+    public static String setLength(int a, String b){
         if (a > 0){
-            b = "b" + a;
+            b = b + a;
         } else if (a < 0) {
-            b = "b" + a;
+            b = a + b;
         } else {
             b = "0";
         }
