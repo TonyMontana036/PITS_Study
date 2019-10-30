@@ -43,7 +43,45 @@ public class MyMathTest {
         assertEquals(expResult, result);
     }
 
-    @Test @Ignore
-    public void testThouthand() {
+    @Test
+    public void thouthandTest1() {
+        int x = -1000;
+        boolean res = MyMath.thouthand(x);
+        assertFalse(res);
+    }
+
+    @Test
+    public void thouthandTest2() {
+        int x = 30;
+        boolean res = MyMath.thouthand(x);
+        assertTrue(res);
+    }
+
+    @Test
+    public void thouthandTest3() {
+        int x = 31;
+        boolean res = MyMath.thouthand(x);
+        assertFalse(res);
+    }
+
+    @Test
+    public void thouthandTest4() {
+        int x = 78;
+        boolean res = MyMath.thouthand(x);
+        assertTrue(res);
+    }
+
+    @Test
+    public void thouthandTest5() {
+        int x = 101;
+        boolean res = MyMath.thouthand(x);
+        assertFalse(res);
+    }
+
+    @Test
+    public void thouthandTest6() {
+        int x = 102;
+        boolean res = MyMath.thouthand(x);
+        assertTrue(res);
     }
 }
